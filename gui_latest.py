@@ -1,4 +1,7 @@
-###Pillow###
+#### Autor: Daniel Moreira Marques Datum: 10.11.2019 Version 1.0 Python File Converter
+
+
+####Pillow###
 
 from PIL import *
 
@@ -32,10 +35,7 @@ root.iconbitmap('/Users/morei/Desktop')
 #### Datei Auswahl ####
 
 root.filename = filedialog.askopenfilename(initialdir="/Users/morei/Desktop", title="Select your File")
-print(root.filename)
 root.file_output_path = filedialog.askdirectory(initialdir="/Users/morei/Desktop", title="Select your Output Path/Folder")
-
-print(root.filename)
 
 #### Datei Converter ####
 
@@ -67,7 +67,3 @@ c.pack(side = RIGHT)
 
 
 window.mainloop()
-
- 
-
-
