@@ -31,7 +31,7 @@ root.iconbitmap('/Users/morei/Desktop')
 
 #### Datei Auswahl ####
 
-root.filename = filedialog.askopenfilenames(initialdir="/Users/morei/Desktop", title="Select your File")
+root.filename = filedialog.askopenfilename(initialdir="/Users/morei/Desktop", title="Select your File")
 print(root.filename)
 root.file_output_path = filedialog.askdirectory(initialdir="/Users/morei/Desktop", title="Select your Output Path/Folder")
 
@@ -53,8 +53,6 @@ def convert():
 #### Tkinter Fenster ####
 
 window = Tk()
-#window.geometry("812x524") # size of the window width:- 500, height:- 375
-window.resizable(0, 0) # this prevents from resizing the window
 window.title("File Converter")
 
 #### Convert Image to png and after converting close the window/App ####
@@ -67,24 +65,9 @@ c = Button(window, text = "Exit", command = sys.exit, bg = "Black")
 c.config(bg = "Black")
 c.pack(side = RIGHT)
 
+
 window.mainloop()
 
  
 
 
-#print("1")
-#fenster()
-#print("2")
-#root.mainloop()
-
-#print("3")
-
-#def savePath(): # select the destination directory to save the images
-#        destination.delete(0,END)
-#        savePath = filedialog.askdirectory(initialdir=os.getcwd())
-#        destination.insert(0,savePath)
-
-#input_frame = Frame(window, width = 312, height = 50, bd = 0, highlightbackground = "black", highlightcolor = "black", highlightthickness = 1)
-#input_field = Entry(input_frame, font = ('arial', 18, 'bold'), textvariable = input_text, width = 50, bg = "#eee", bd = 0, justify = RIGHT)
-#input_field.grid(row = 0, column = 0)
-#input_field.pack(ipady = 10)
